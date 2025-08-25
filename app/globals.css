@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&family=Sonsie+One&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+  
+  html {
+    @apply scroll-smooth;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    @apply overflow-x-hidden bg-eerie-black;
+  }
+
+  body.menu-open {
+    @apply overflow-hidden;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-raisin-black-2;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-orange rounded-lg;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-orange text-white font-oswald font-medium uppercase tracking-wider 
+           flex items-center justify-center gap-2 px-8 py-3 transition-colors duration-150
+           hover:bg-raisin-black-1;
+    clip-path: polygon(90% 0, 100% 34%, 100% 100%, 10% 100%, 0 66%, 0 0);
+  }
+
+  .btn-secondary {
+    @apply bg-white text-orange font-oswald font-medium uppercase tracking-wider 
+           flex items-center justify-center gap-2 px-8 py-3 transition-colors duration-150
+           hover:bg-raisin-black-1 hover:text-white;
+    clip-path: polygon(90% 0, 100% 34%, 100% 100%, 10% 100%, 0 66%, 0 0);
+  }
+
+  .section-title {
+    @apply relative text-white text-4xl font-oswald uppercase text-center mb-20;
+  }
+
+  .section-title::before {
+    content: '';
+    @apply absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-28 h-1 bg-orange rounded-b;
+  }
+
+  .section-title::after {
+    content: '';
+    @apply absolute -bottom-5 left-1/2 transform -translate-x-1/2 w-8 h-1 bg-orange rounded-b;
+  }
+
+  .game-character {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .game-character:nth-child(2) {
+    animation-delay: 1s;
+  }
+
+  .game-character:nth-child(3) {
+    animation-delay: 2s;
+  }
+
+  .navbar-link {
+    @apply relative text-platinum py-8 border-b border-transparent font-oswald 
+           uppercase tracking-wide transition-colors duration-150 hover:text-orange;
+  }
+
+  .navbar-link::after {
+    content: '';
+    @apply absolute inset-0 transform skew-x-12 border-b-4 border-transparent 
+           transition-all duration-150 -z-10;
+  }
+
+  .navbar-link:hover::after {
+    @apply bg-raisin-black-2 border-orange;
+  }
+
+  .gears-card-bg {
+    background: url('https://i.postimg.cc/JhHdWL8j/gears-card-bg.png') no-repeat center;
+    background-size: contain;
+  }
+}
