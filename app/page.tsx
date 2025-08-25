@@ -11,19 +11,21 @@ import GoTop from '@/components/GoTop'
 
 export default function Home() {
   return (
-    <main className="bg-eerie-black">
+    <>
       <Header />
-      <Hero />
-      <div className="bg-section-wrapper bg-cover bg-center">
-        <About />
-        <Tournament />
-        <Gallery />
-        <Team />
-        <Gears />
-        <Newsletter />
-      </div>
+      <main className="bg-eerie-black">
+        <Hero />
+        <div className="bg-section-wrapper bg-cover bg-center">
+          <About />
+          <Tournament />
+          <Gallery />
+          <Team />
+          <Gears />
+          <Newsletter />
+        </div>
+      </main>
       <Footer />
       <GoTop />
-    </main>
+    </>
   )
 }

@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section 
       id="hero" 
-      className="relative min-h-screen bg-hero-pattern bg-cover bg-center bg-no-repeat flex items-center justify-center text-center mt-20 lg:mt-28"
+      className="relative min-h-screen bg-hero-pattern bg-cover bg-center bg-no-repeat flex items-center justify-center text-center pt-20 lg:pt-28"
     >
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-black/30"></div>

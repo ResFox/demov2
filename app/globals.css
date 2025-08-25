@@ -11,10 +11,14 @@
   html {
     @apply scroll-smooth;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
   }
   
   body {
     @apply overflow-x-hidden bg-eerie-black;
+    margin: 0;
+    padding: 0;
   }
 
   body.menu-open {
