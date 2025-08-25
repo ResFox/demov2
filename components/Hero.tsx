@@ -7,7 +7,10 @@ const Hero = () => {
   return (
     <section 
       id="hero" 
-      className="relative min-h-screen bg-hero-pattern bg-cover bg-center bg-no-repeat flex items-center justify-center text-center pt-20 lg:pt-28"
+      className="relative min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center text-center pt-20 lg:pt-28"
+      style={{
+        backgroundImage: "url('https://i.postimg.cc/XqXRdnV1/hero-banner.jpg')" // Replace this URL with your PostImage link
+      }}
     >
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-black/30"></div>
