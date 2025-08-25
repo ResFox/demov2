@@ -15,12 +15,11 @@ const Footer = () => {
   }
 
   const footerMenuLinks = [
-    { href: '#hero', label: 'Home' },
-    { href: '#about', label: 'About' },
-    { href: '#tournament', label: 'Tournament' },
-    { href: '#team', label: 'Team' },
-    { href: '#gears', label: 'Gears' },
-    { href: '#contact', label: 'Contact' },
+    { href: '/', label: 'Home' },
+    { href: '/catalog', label: 'Catalog' },
+    { href: '/status', label: 'Status' },
+    { href: '/guide', label: 'Guide' },
+    { href: '/help', label: 'Help' },
   ]
 
   const quickLinks = [
