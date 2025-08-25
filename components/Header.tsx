@@ -55,7 +55,7 @@ const Header = () => {
             <Link href="#" className="flex-shrink-0">
               <Image
                 src="https://i.postimg.cc/h4y5jGhT/logo-1.png"
-                alt="GameX Logo"
+                alt="Pandora's Box Logo"
                 width={120}
                 height={40}
                 className="h-auto"
@@ -123,7 +123,7 @@ const Header = () => {
         <div className="flex justify-between items-center p-6 border-b border-white/10">
           <Image
             src="https://i.postimg.cc/h4y5jGhT/logo-1.png"
-            alt="GameX Logo"
+            alt="Pandora's Box Logo"
             width={100}
             height={35}
             className="h-auto"

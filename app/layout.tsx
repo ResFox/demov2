@@ -7,19 +7,19 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://gamex-website.vercel.app'),
-  title: 'GameX - Gaming Website',
-  description: 'Experience just for gamers - Join our electrifying tournaments and gaming community',
-  keywords: 'gaming, tournaments, esports, gaming gear, team, community',
+  metadataBase: new URL('https://pandoras-box-premium.vercel.app'),
+  title: "Pandora's Box - Premium Gaming Cheats",
+  description: 'Premium gaming cheats and tools for competitive advantage - Professional quality gaming enhancements',
+  keywords: 'gaming, cheats, premium tools, game enhancements, competitive advantage, gaming software',
   authors: [{ name: 'ULTRA CODE' }],
   icons: {
     icon: 'https://i.postimg.cc/PxTnhmmb/favicon-1.png',
   },
   openGraph: {
-    title: 'GameX - Gaming Website',
-    description: 'Experience just for gamers - Join our electrifying tournaments and gaming community',
+    title: "Pandora's Box - Premium Gaming Cheats",
+    description: 'Premium gaming cheats and tools for competitive advantage - Professional quality gaming enhancements',
     type: 'website',
-    siteName: 'GameX',
+    siteName: "Pandora's Box",
   }
 }
 

@@ -1,12 +1,12 @@
-# GameX - Professional Gaming Website
+# Pandora's Box - Premium Gaming Cheats
 
-A modern, responsive gaming website built with Next.js 14, TypeScript, and Tailwind CSS. Features stunning animations, optimized performance, and a professional gaming aesthetic.
+A modern, responsive premium gaming website built with Next.js 14, TypeScript, and Tailwind CSS. Features stunning animations, optimized performance, and a professional gaming aesthetic for premium gaming tools and cheats.
 
 ## 🚀 Live Demo
 
 Deploy this project instantly on Vercel by clicking the button below:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/gamex-website)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/pandoras-box-premium)
 
 ## ✨ Features
 
@@ -38,8 +38,8 @@ Deploy this project instantly on Vercel by clicking the button below:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/gamex-website.git
-   cd gamex-website
+   git clone https://github.com/YOUR_USERNAME/pandoras-box-premium.git
+   cd pandoras-box-premium
    ```
 
 2. **Install dependencies**
@@ -62,7 +62,7 @@ Deploy this project instantly on Vercel by clicking the button below:
 ## 📁 Project Structure
 
 ```
-gamex-website/
+pandoras-box-premium/
 ├── app/                    # Next.js 13+ app directory
 │   ├── globals.css        # Global styles and Tailwind imports
 │   ├── layout.tsx         # Root layout component
@@ -181,9 +181,9 @@ Custom utility classes and design tokens in `tailwind.config.ts`:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🎮 About GameX
+## 🎮 About Pandora's Box
 
-GameX represents the pinnacle of modern gaming website design, combining cutting-edge web technologies with stunning visual aesthetics. Built for the gaming community, by developers who understand what gamers want.
+Pandora's Box represents the pinnacle of premium gaming tools and cheats, combining cutting-edge web technologies with stunning visual aesthetics. Built for serious gamers who demand competitive advantage and professional-quality gaming enhancements.
 
 ---
 

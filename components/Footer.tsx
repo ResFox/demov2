@@ -80,7 +80,7 @@ const Footer = () => {
             <Link href="#" className="inline-block">
               <Image
                 src="https://i.postimg.cc/h4y5jGhT/logo-1.png"
-                alt="GameX Logo"
+                alt="Pandora's Box Logo"
                 width={150}
                 height={50}
                 className="h-auto"
