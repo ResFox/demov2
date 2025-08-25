@@ -28,12 +28,18 @@ const Hero = () => {
           </motion.p>
           
           <motion.h1 
-            className="text-white font-sonsie text-6xl sm:text-7xl md:text-8xl lg:text-hero xl:text-[180px] font-normal uppercase mb-8 leading-none drop-shadow-2xl"
+            className="text-white font-oswald text-6xl sm:text-7xl md:text-8xl lg:text-[120px] xl:text-[150px] font-black uppercase mb-8 leading-none drop-shadow-2xl tracking-wider"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            Steam
+            <span className="bg-gradient-to-r from-white via-orange to-white bg-clip-text text-transparent">
+              Pandora's
+            </span>
+            <br />
+            <span className="text-orange font-bold tracking-[0.2em]">
+              BOX
+            </span>
           </motion.h1>
           
           <motion.div 

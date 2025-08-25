@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { Menu, X, Search, LogIn, Facebook, Instagram, Github, Youtube } from 'lucide-react'
 
@@ -51,15 +50,10 @@ const Header = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-5">
             {/* Logo */}
-            <Link href="#" className="flex-shrink-0">
-              <Image
-                src="https://i.postimg.cc/h4y5jGhT/logo-1.png"
-                alt="Pandora's Box Logo"
-                width={120}
-                height={40}
-                className="h-auto"
-                priority
-              />
+            <Link href="/" className="flex-shrink-0">
+              <h1 className="text-white font-oswald text-2xl md:text-3xl font-bold uppercase tracking-wider hover:text-orange transition-colors duration-300">
+                Pandora's <span className="text-orange">Box</span>
+              </h1>
             </Link>
 
             {/* Mobile Menu Button */}
@@ -120,13 +114,9 @@ const Header = () => {
         isMenuOpen ? 'translate-x-0' : 'translate-x-full'
       }`}>
         <div className="flex justify-between items-center p-6 border-b border-white/10">
-          <Image
-            src="https://i.postimg.cc/h4y5jGhT/logo-1.png"
-            alt="Pandora's Box Logo"
-            width={100}
-            height={35}
-            className="h-auto"
-          />
+          <h1 className="text-white font-oswald text-xl font-bold uppercase tracking-wider">
+            Pandora's <span className="text-orange">Box</span>
+          </h1>
           <button
             onClick={closeMenu}
             className="text-orange text-2xl p-2 hover:bg-orange/10 rounded transition-colors"

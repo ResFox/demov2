@@ -1,6 +1,6 @@
 'use client'
 
-import Image from 'next/image'
+
 import Link from 'next/link'
 import { Search } from 'lucide-react'
 import { useState } from 'react'
@@ -76,14 +76,10 @@ const Footer = () => {
         <div className="container mx-auto px-4">
           {/* Logo */}
           <div className="text-center mb-12">
-            <Link href="#" className="inline-block">
-              <Image
-                src="https://i.postimg.cc/h4y5jGhT/logo-1.png"
-                alt="Pandora's Box Logo"
-                width={150}
-                height={50}
-                className="h-auto"
-              />
+            <Link href="/" className="inline-block">
+              <h2 className="text-white font-oswald text-3xl md:text-4xl font-bold uppercase tracking-wider hover:text-orange transition-colors duration-300">
+                Pandora's <span className="text-orange">Box</span>
+              </h2>
             </Link>
           </div>
 
@@ -177,13 +173,9 @@ const Footer = () => {
             </p>
 
             <div className="max-w-xs mx-auto md:mx-0">
-              <Image
-                src="https://i.postimg.cc/432bbz4J/footer-bottom-img.png"
-                alt="Payment Methods"
-                width={300}
-                height={50}
-                className="w-full h-auto opacity-80"
-              />
+              <div className="text-light-gray text-sm opacity-80 text-center">
+                Secure Payment Methods Accepted
+              </div>
             </div>
           </div>
         </div>
