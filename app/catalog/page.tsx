@@ -102,8 +102,8 @@ export default function CatalogPage() {
                     </button>
 
                     {/* Status */}
-                    <div className={`absolute top-[2%] right-[5%] flex items-center gap-1 font-oswald text-xs font-medium uppercase ${product.statusColor}`}>
-                      <div className={`w-2 h-2 rounded-full ${
+                    <div className={`absolute top-[8%] right-[8%] flex items-center justify-center gap-2 font-oswald text-sm font-bold uppercase ${product.statusColor} bg-black/70 px-3 py-1 rounded`}>
+                      <div className={`w-3 h-3 rounded-full ${
                         product.status === 'Undetected' ? 'bg-green-400' :
                         product.status === 'Updated' ? 'bg-orange' : 'bg-purple-400'
                       }`}></div>

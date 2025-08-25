@@ -38,55 +38,12 @@ const About = () => {
     >
       <div className="container mx-auto px-4">
         <div className="lg:flex lg:items-center lg:gap-24 xl:gap-32">
-          {/* Banner */}
+          {/* Content */}
           <motion.div 
-            className="relative mb-12 lg:mb-0 lg:w-1/2"
+            className="lg:w-1/2 mb-12 lg:mb-0"
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
-          >
-            <div className="relative max-w-md mx-auto lg:max-w-lg">
-              <Image
-                src="https://i.postimg.cc/Kc3gLCHW/about-img.png"
-                alt="M Shape"
-                width={500}
-                height={400}
-                className="w-full h-auto"
-                priority
-              />
-
-              {/* Floating Characters */}
-              {characters.map((character, index) => (
-                <motion.div
-                  key={index}
-                  className={character.className}
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={inView ? { opacity: 1, scale: 1 } : {}}
-                  transition={{ 
-                    duration: 0.6, 
-                    delay: 0.3 + index * 0.2,
-                    type: "spring",
-                    stiffness: 120
-                  }}
-                >
-                  <Image
-                    src={character.src}
-                    alt={character.alt}
-                    width={150}
-                    height={150}
-                    className="w-full h-auto drop-shadow-lg"
-                  />
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* Content */}
-          <motion.div 
-            className="lg:w-1/2"
-            initial={{ opacity: 0, x: 50 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="bg-raisin-black-1 p-8 md:p-12 rounded shadow-xl">
               <motion.p 
@@ -132,6 +89,49 @@ const About = () => {
                   Will sharpen your brain and focus
                 </span>
               </motion.div>
+            </div>
+          </motion.div>
+
+          {/* Banner */}
+          <motion.div 
+            className="relative lg:w-1/2"
+            initial={{ opacity: 0, x: 50 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <div className="relative max-w-md mx-auto lg:max-w-lg">
+              <Image
+                src="https://i.postimg.cc/Kc3gLCHW/about-img.png"
+                alt="M Shape"
+                width={500}
+                height={400}
+                className="w-full h-auto"
+                priority
+              />
+
+              {/* Floating Characters */}
+              {characters.map((character, index) => (
+                <motion.div
+                  key={index}
+                  className={character.className}
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={inView ? { opacity: 1, scale: 1 } : {}}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: 0.3 + index * 0.2,
+                    type: "spring",
+                    stiffness: 120
+                  }}
+                >
+                  <Image
+                    src={character.src}
+                    alt={character.alt}
+                    width={150}
+                    height={150}
+                    className="w-full h-auto drop-shadow-lg"
+                  />
+                </motion.div>
+              ))}
             </div>
           </motion.div>
         </div>

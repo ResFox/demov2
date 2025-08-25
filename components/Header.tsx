@@ -50,7 +50,7 @@ const Header = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-5">
             {/* Logo */}
-            <Link href="/" className="flex-shrink-0">
+            <Link href="/" className="flex-shrink-0 ml-8">
               <h1 className="text-white font-oswald text-2xl md:text-3xl font-bold uppercase tracking-wider hover:text-orange transition-colors duration-300">
                 Pandora's <span className="text-orange">Box</span>
               </h1>
@@ -67,12 +67,12 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center">
-              <ul className="flex items-center">
+              <ul className="flex items-center gap-8">
                 {navigationLinks.map((link, index) => (
                   <li key={index}>
                     <Link
                       href={link.href}
-                      className="navbar-link px-4"
+                      className="text-platinum font-oswald text-lg font-medium uppercase tracking-wide py-8 hover:text-orange transition-colors duration-300 border-b-4 border-transparent hover:border-orange"
                       onClick={closeMenu}
                     >
                       {link.label}
